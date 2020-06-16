@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Widget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.view').click(function () {
+                $('.details').addClass('active')
+            })
+            $('.close').click(function () {
+                $('.details').removeClass('active')
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="profile">
+        <img src="img/bol.jpg">
+        <a href="#" class="view"> View Profile</a>
+        <div class="details">
+            <h2>Danika Brace</h2><br><span> Super Bol</span></h2>
+            <p>Treinadora de futebol americano e ex-jogadora<br>
+            </p>
+            <h3>Follow</h3>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="close">
+                <i class="fa fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
